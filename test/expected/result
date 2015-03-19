@@ -1,0 +1,16 @@
+(function(){
+    var cssText = ["body{\n","  color: #FFF;\n","  font-size: 15px;\n","}\n","\n","a{\n","  color: blue;\n","  font-size: 18px;\n","}\n","p{\n","  color: #FFF;\n","  margin: 15px 0;\n","}\n","\n","h1{\n","  color: red;\n","  font-size: 22px;\n","}"].join("");
+    var styleEl = document.createElement("style");
+    document.getElementsByTagName("head")[0].appendChild(styleEl);
+    if (styleEl.styleSheet) {
+        if (!styleEl.styleSheet.disabled) {
+            styleEl.styleSheet.cssText = cssText;
+        }
+    } else {
+        try {
+            styleEl.innerHTML = cssText;
+        } catch(e) {
+            styleEl.innerText = cssText;
+        }
+    }
+})();
