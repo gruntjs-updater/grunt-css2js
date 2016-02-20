@@ -32,11 +32,11 @@
     "grunt-contrib-nodeunit": "^0.3.3",
     "grunt": "~0.4.5"
   },
-  "dependencies":{
-    "es-css2js":"0.0.8"
+  "dependencies": {
+    "es-css2js": "0.0.8"
   },
   "peerDependencies": {
-    "grunt": "~0.4.5"
+    "grunt": ">=0.4.0"
   },
   "keywords": [
     "gruntplugin",
